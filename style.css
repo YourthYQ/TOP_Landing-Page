@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --btn-color: #3882f6;
+    --test: 1px solid red;
+    --hero-footer-color: #1f2937;
+    --hero-main-txtcolor: #f9faf8;
+    --secondary-link-color: #e5e7eb;
+    --quote-txtcolor: #1f2937;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    /* line-height: 1.5; */
+}
+
+.hero {
+    background-color: var(--hero-footer-color);
+    /* height: 100vh; */
+    padding: 70px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1 {
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    color: #f9faf8;
+}
+
+.header ul li {
+    list-style-type: none;
+}
+
+.l1, .l2 {
+    margin-right: 20px;
+}
+
+.header-content {
+    margin-top: 70px;
+    color: #f9faf8;
+    display: flex;
+    column-gap: 30px;
+    width: 100%;
+    justify-content: space-between; /* Adjusts spacing between children */
+}
+
+.main-content {
+    /* border: var(--test); */
+    color: var(--hero-main-txtcolor);
+    width: 60%;
+}
+
+.main-content h1 {
+    font-size: 48px;;
+}
+
+.main-content p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;;
+    color: #f9faf8;
+}
+
+.btn-sign-up {
+    background-color: var(--btn-color);
+    padding: 15px;
+    color: var(--hero-main-txtcolor);
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 103%;
+}
+
+.img-main {
+    padding: 10px;
+    width: 40%;
+}
+
+.img-main img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: block;
+    padding: 70px;
+}
+
+.gallery-header {
+    margin-bottom: 45px;
+}
+
+.gallery h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.card .card-holder {
+    justify-content: space-evenly; /* Centers the image within the div */
+    align-items: center; /* Aligns the image vertically */
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.card-holder .img {
+    width: 200px;
+    height: auto;
+}
+
+.card-holder img {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.card-holder p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.quote {
+    background-color: var(--secondary-link-color);
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.citation p {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 50px;
+    width: 70%;           /* Sets the width of the paragraph to 50% of its parent container, typically the body or a specific div */
+    margin: 0 auto;       /* Sets the top and bottom margins to 0 and automatically adjusts the left and right margins to center the paragraph */
+    text-align: center;   /* Optional: Centers the text within the paragraph block if desired */
+}
+
+.citation .author {
+    font-style: normal;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 700;
+    margin-right: 50px;
+}
+
+.contact {
+    padding: 100px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact .inner-square {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--btn-color);
+    border-radius: 5px;
+    align-items: center;
+    padding: 30px;
+    column-gap: normal;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.inner-square .text {
+    color: white;
+}
+
+.inner-square .btn-sign-up {
+    border: solid white 2px;
+    margin-top: 0px;
+}
+
+.footer {
+    background-color: var(--hero-footer-color);
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    display: flex;
+    color: var(--hero-main-txtcolor);
+}
